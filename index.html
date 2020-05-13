@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/Field.js"></script>
+    <script src="js/BotAlgorithm3x3.js"></script>
+    <script src="js/TicTacToe.js"></script>
+    <title>Крестики-нолики</title>
+</head>
+<body>
+    <div class="game game_register">
+        <h1 class="game__title">Крестики-нолики</h1>
+        <form class="register">
+            <div class="register__description">Для начала игры введите имя</div>
+            <div class="register__param"> 
+                <label for="register__label" class="form-label">Имя</label>
+                <input type="text" id="name" class="register__input register__input_text" maxlength="50" required>
+            </div> 
+            <button class="register__finish">Играть</button>
+        </form>
+        <div class="game__score"></div>
+        <div class="game__status"></div>
+        <div class="game__container">
+            <table class="field"></table>
+            <div class="game__history">
+                <div class="game__history-title">История игр</div>
+            </div>
+        </div>
+
+        <button class="game__restart">Новый раунд</button>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
